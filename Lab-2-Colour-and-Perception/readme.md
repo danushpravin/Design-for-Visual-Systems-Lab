@@ -107,8 +107,11 @@ montage({X,Y,Z}, 'Size', [1 3]);
 ![image](https://github.com/user-attachments/assets/b941a3d8-8329-4853-9c7a-b96c0f0bbb60)
 
 My observations and learnings based on the above results are:
+
 X channel: This channel represents colors that are made by mixing red and green light.
+
 Y channel: This one shows the brightness of the image, which is mostly related to the green light.
+
 Z channel: This channel is linked to the blue light in the image.
 
 

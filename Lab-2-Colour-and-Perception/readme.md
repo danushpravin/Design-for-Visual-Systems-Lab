@@ -44,9 +44,12 @@ In this image, I thought there were 5 triangles at first, but when I looked more
 
 In this task i used multiple library functions to manipulate and play with images. The first function was to get the details of an image. This function is as below:
 
-'''matlab
+```matlab
 imfinfo('peppers.png')
-'''
+```
+Matlab returned some basic details and information of this image.
+![image](https://github.com/user-attachments/assets/9f2a7d69-5ec1-4d23-a184-5d828bb0911f)
+
 
 
 

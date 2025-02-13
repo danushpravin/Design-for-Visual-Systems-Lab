@@ -1,4 +1,4 @@
-MATLAB Image Rotation Project
+Lab 1: Introduction to MATLAB
 
 ## Task 0: Learning MATLAB Basics
 

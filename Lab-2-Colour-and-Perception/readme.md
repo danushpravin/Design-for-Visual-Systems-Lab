@@ -86,6 +86,31 @@ disp(['Pixel value in Blue channel at (100,150): ', num2str(B(row, col))]);
 
 ![image](https://github.com/user-attachments/assets/8d266d00-b60e-42c5-8292-128f947eabe9)
 
+## Task 12: Map RGB image to HSV space and into separate channels
+
+Now the seperate channels to split the image are the H,S and V channels.
+```matlab
+HSV = rgb2hsv(RGB);
+[H,S,V] = imsplit(HSV);
+montage({H,S,V}, 'Size', [1 3]))
+```
+![image](https://github.com/user-attachments/assets/e5f83fe8-ad96-48f0-af3f-2c16996c22a1)
+
+## Task 13: Map RGB image to XYZ space
+
+Now the final task is to map the rgb image to xyz space. The function format is the same as all the previous functions.
+```matlab
+XYZ = rgb2xyz(RGB);
+[X,Y,Z] = imsplit(XYZ);
+montage({X,Y,Z}, 'Size', [1 3]);
+```
+![image](https://github.com/user-attachments/assets/b941a3d8-8329-4853-9c7a-b96c0f0bbb60)
+
+My observations and learnings based on the above results are:
+X channel: This channel represents colors that are made by mixing red and green light.
+Y channel: This one shows the brightness of the image, which is mostly related to the green light.
+Z channel: This channel is linked to the blue light in the image.
+
 
 
 

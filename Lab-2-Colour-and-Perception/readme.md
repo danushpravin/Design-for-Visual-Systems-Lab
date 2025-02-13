@@ -75,8 +75,16 @@ montage({R, G, B},'Size',[1 3])
 ![image](https://github.com/user-attachments/assets/9a1823be-6a80-4b3d-9211-aedc6d184582)
 As we can see the red peppers are predominant in the red channel, the green peppers in the green channel while the garlic is predominant in all 3 channels. All channels have the same dimensions and the data type is unit8.
 Another thing i did was to choose a pixel and get the values from all different channels to compare them. 
-![image](https://github.com/user-attachments/assets/76b2f46e-620d-4f62-b4fc-e463536426f0)
-![image](https://github.com/user-attachments/assets/095cb318-75a7-4ba0-b9d3-a91a2fb8571c)
+```matlab
+row = 100;
+col = 150;
+disp(['Pixel value in Red channel at (100,150): ', num2str(R(row, col))]);
+disp(['Pixel value in Green channel at (100,150): ', num2str(G(row, col))]);
+disp(['Pixel value in Blue channel at (100,150): ', num2str(B(row, col))]);
+```
+![image](https://github.com/user-attachments/assets/c6e7635a-83ab-4579-ba89-b17df8ab9820)
+
+![image](https://github.com/user-attachments/assets/8d266d00-b60e-42c5-8292-128f947eabe9)
 
 
 

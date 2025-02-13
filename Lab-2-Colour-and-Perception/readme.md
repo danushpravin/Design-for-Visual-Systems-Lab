@@ -44,7 +44,9 @@ In this image, I thought there were 5 triangles at first, but when I looked more
 
 In this task i used multiple library functions to manipulate and play with images. The first function was to get the details of an image. This function is as below:
 
+'''matlab
 imfinfo('peppers.png')
+'''
 
 
 

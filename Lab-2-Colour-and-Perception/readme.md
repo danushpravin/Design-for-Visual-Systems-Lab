@@ -96,6 +96,10 @@ montage({H,S,V}, 'Size', [1 3]))
 ```
 ![image](https://github.com/user-attachments/assets/e5f83fe8-ad96-48f0-af3f-2c16996c22a1)
 
+Hue (H): This shows the color itself, like red, blue, or green.
+Saturation (S): This shows how strong or faded the color is. High saturation means the color is bright and pure; low saturation means the color is dull.
+Value (V): This shows how bright or dark the color is. A high value means bright, and low means dark.
+
 ## Task 13: Map RGB image to XYZ space
 
 Now the final task is to map the rgb image to xyz space. The function format is the same as all the previous functions.

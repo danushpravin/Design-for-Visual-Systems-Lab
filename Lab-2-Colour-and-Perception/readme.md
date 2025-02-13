@@ -40,5 +40,12 @@ In this image, I thought there were 5 triangles at first, but when I looked more
 
 ## Part 2 : Exploring Colours in MATLAB
 
+## Task 10: Convert RGB to grayscale
+
+In this task i used multiple library functions to manipulate and play with images. The first function was to get the details of an image. This function is as below:
+
+imfinfo('peppers.png')
+
+
 
 

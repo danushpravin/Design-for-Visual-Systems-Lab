@@ -36,14 +36,16 @@ function [Out] = Rotate(In, Theta)
 
 ### Formulas Used:
 
-1. **Forward Mapping**:
-   ![image](https://github.com/user-attachments/assets/60242367-8f64-462c-acc7-631ad6b3ca13)
-   ![image](https://github.com/user-attachments/assets/04f8f853-e11a-4a1a-a9c5-29f6ffcee991)
+### Formulas Used:
 
+1. **Forward Mapping**:
+   <div style="display: flex; justify-content: space-around;">
+     <img src="https://github.com/user-attachments/assets/60242367-8f64-462c-acc7-631ad6b3ca13" alt="Forward Mapping Image 1" width="45%">
+     <img src="https://github.com/user-attachments/assets/04f8f853-e11a-4a1a-a9c5-29f6ffcee991" alt="Forward Mapping Image 2" width="45%">
+   </div>
 
 2. **Reverse Mapping**:
-   ![image](https://github.com/user-attachments/assets/c1b5392f-dd35-4452-8ccf-be6f64dd4266)
-
+   <img src="https://github.com/user-attachments/assets/c1b5392f-dd35-4452-8ccf-be6f64dd4266" alt="Reverse Mapping Image" width="90%">
 
 ### Approach:
 

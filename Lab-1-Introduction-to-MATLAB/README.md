@@ -16,6 +16,7 @@ However, I noticed that this command didn’t work. After investigating further 
 ```matlab
 >> X(20,319)
 ```
+![image](https://github.com/user-attachments/assets/392b6e83-a11a-4375-bc94-a3ee807d99ca)
 
 ## Task 1: Image Rotation
 

@@ -50,6 +50,33 @@ imfinfo('peppers.png')
 Matlab returned some basic details and information of this image.
 ![image](https://github.com/user-attachments/assets/9f2a7d69-5ec1-4d23-a184-5d828bb0911f)
 
+The next function to convert from rgb to grayscale is below:
+```matlab
+I = rgb2gray(RGB);
+figure              
+imshow(I)
+```
+![image](https://github.com/user-attachments/assets/a722a4e3-861c-4cef-b7f7-eeaaa95d1887)
+
+To compare the images side by side we use the following code:
+```matlab
+imshowpair(RGB, I, 'montage')
+title('Original colour image (left) grayscale image (right)');
+```
+![image](https://github.com/user-attachments/assets/5663a93e-9f7a-4174-a8b2-99aab1e08ff7)
+
+## Task 11: Splitting an RGB image into seperate channels
+
+In this task we split the peppers image into seperate red, blue and green channels. We can display this and show how the image can be split.
+```matlab
+[R,G,B] = imsplit(RGB);
+montage({R, G, B},'Size',[1 3])
+```
+![image](https://github.com/user-attachments/assets/9a1823be-6a80-4b3d-9211-aedc6d184582)
+As we can see the red peppers are predominant in the red channel, the green peppers in the green channel while the garlic is predominant in all 3 channels. All channels have the same dimensions and the data type is unit8.
+Another thing i did was to choose a pixel and get the values from all different channels to compare them. 
+![image](https://github.com/user-attachments/assets/76b2f46e-620d-4f62-b4fc-e463536426f0)
+![image](https://github.com/user-attachments/assets/095cb318-75a7-4ba0-b9d3-a91a2fb8571c)
 
 
 

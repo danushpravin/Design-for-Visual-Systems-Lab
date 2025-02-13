@@ -37,10 +37,13 @@ function [Out] = Rotate(In, Theta)
 ### Formulas Used:
 
 1. **Forward Mapping**:
-   (Include your forward mapping formula here)
+   ![image](https://github.com/user-attachments/assets/60242367-8f64-462c-acc7-631ad6b3ca13)
+   ![image](https://github.com/user-attachments/assets/04f8f853-e11a-4a1a-a9c5-29f6ffcee991)
+
 
 2. **Reverse Mapping**:
-   (Include your reverse mapping formula here)
+   ![image](https://github.com/user-attachments/assets/c1b5392f-dd35-4452-8ccf-be6f64dd4266)
+
 
 ### Approach:
 
@@ -55,6 +58,7 @@ function [Out] = Rotate(In, Theta)
 
 4. **Handle Boundary Conditions**:
    Lastly, I checked if any pixel falls outside the image bounds. If it does, I set it to black, as the task specifies.
+![image](https://github.com/user-attachments/assets/060e4914-e015-4f5a-9478-464e37db2033)
 
 ### Example Command:
 To view the rotated image, use the following command:
@@ -65,6 +69,14 @@ where the angle is 30 degrees.
 
 ### Results:
 I have played around by changing the theta (45, 30, 90) and got different outputs.
+
+<div style="display: flex; justify-content: space-around;">
+  <img src="https://github.com/user-attachments/assets/97953ab3-2ba2-48c0-bafd-2966a39c75ae" alt="Image 1" width="30%">
+  <img src="https://github.com/user-attachments/assets/4facf486-c6da-46b5-800d-7bd6b601712f" alt="Image 2" width="30%">
+  <img src="https://github.com/user-attachments/assets/d1d77920-211b-458f-9d7a-d5ed92cda2e4" alt="Image 3" width="30%">
+</div>
+
+
 ```
 
 Feel free to copy and paste this into your README file on GitHub! If you need any more adjustments, just let me know.

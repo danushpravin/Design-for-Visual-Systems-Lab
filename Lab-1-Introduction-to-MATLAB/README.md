@@ -1,5 +1,4 @@
-```markdown
-# MATLAB Image Rotation Project
+MATLAB Image Rotation Project
 
 ## Task 0: Learning MATLAB Basics
 

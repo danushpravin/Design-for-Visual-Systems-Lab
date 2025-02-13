@@ -78,6 +78,56 @@ I have played around by changing the theta (45, 30, 90) and got different output
   <img src="https://github.com/user-attachments/assets/d1d77920-211b-458f-9d7a-d5ed92cda2e4" alt="Image 3" width="30%">
 </div>
 
+## Task 2: Image Shearing
+
+The second coding task was to implement image shearing using the same method but different formulas and variables. This time there is no theta but the variables are xshear and yshear. 
+
+### Inputs:
+- **In**: The input grayscale image (2D matrix).
+- **Xshear**: The shear factor for the x-axis determines how much the image will be sheared horizontally.
+- **Yshear**: The shear factor for the y-axis determines how much the image will be sheared vertically.
+
+### Outputs:
+- **Out**: The sheared grayscale image, which should have the same size as the original.
+
+### Format of the function:
+```matlab
+function [Out] =  Shear(In, Xshear, Yshear)
+
+```
+
+### Formulas Used:
+
+### Formulas Used:
+
+1. **Forward Mapping**:
+   <img src="https://github.com/user-attachments/assets/a5e29162-73ae-4cf3-b19e-a1cc2af720ac" alt="Reverse Mapping Image" width="90%">
+
+### Approach:
+
+1. **Find the Center of the Image**:
+   Since the shear operation is performed about the center of the image, the first step was to calculate the center point of the image. This allows the image to be sheared symmetrically.
+
+2. **Create the Transformation Matrices**:
+   Using the shear factors xshear (horizontal shear) and yshear (vertical shear), I created the transformation matrix. The matrix defines how much each pixel should be shifted horizontally and vertically.
+
+3. **Loop Through the Pixels**:
+   Next, I looped through each pixel in the output image. For each pixel, I applied the reverse transformation to map it back to its corresponding position in the input image. The nearest pixel from the source image was    used to determine the color value.
+
+4. **Handle Boundary Conditions**:
+   Finally, I checked if any calculated pixel position fell outside the image bounds. If so, I set the corresponding pixel in the output image to black (0), as specified in the task, ensuring that there are no invalid      pixels in the output.
+
+![image](https://github.com/user-attachments/assets/afcea88c-784e-4586-b9c6-9cb209cd9b3e)
+
+
+### Results:
+Case1: When xshear is 0.5 and yshear is 0.2.
+<img src="https://github.com/user-attachments/assets/766cd065-d9a5-4ee3-8e2a-3f11c8d946d4" alt="Reverse Mapping Image" width="90%">
+
+Case2: When xshear is 1 and yshear is 0.6.
+<img src="https://github.com/user-attachments/assets/e909a482-e743-4ddc-bb37-3b4e262edb60" alt="Reverse Mapping Image" width="90%">
+
+
 
 ```
 

@@ -51,4 +51,11 @@ All the edges are clear and details are really fine and precise.
 For a better comparison i tried out the gamma correction method of the previous task for the bone scan image.
 ![image](https://github.com/user-attachments/assets/a00b7ef7-d115-406b-be9d-9c282decd45b)
 
-As seen the image is not as clear and well defined as the formula based one.
+As seen the image is not as clear and well defined as the formula based one. Therefore it is observed that all these different methods can be used for different cases.
+
+## Task 3: Contrast Enhancement using Histogram
+
+For the histogram method first we import the pollen image and plot the hisotgram using the imhist function. The output can be seen as below:
+![image](https://github.com/user-attachments/assets/3bfa89ab-48d8-4130-a8a0-d660a672de79)
+
+![image](https://github.com/user-attachments/assets/9c0fc836-82d7-450e-86ae-87f70d381f5a)

@@ -78,3 +78,6 @@ The result of the imfill function shows that all the holes and circular gaps in 
 ![image](https://github.com/user-attachments/assets/380061f7-b802-400d-898f-265431b2d313)
 
 Dilation expanded the brighter areas, making the light regions more prominent. Erosion shrunk the light areas, darkening the image. Subtracting the eroded image from the dilated one enhanced the boundaries, highlighting the edges clearly.
+
+
+

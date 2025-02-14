@@ -103,3 +103,24 @@ Case 3: Large kernel size with high sigma
 
 Here it is smoothed out properly with almost no noise but all the edges and details are blurred out and lost.
 
+## Task 5: Median Filtering
+
+The result of the provided median filter function is as below:
+![image](https://github.com/user-attachments/assets/3e98e6cc-0fa9-4bfe-b505-938a25df7f4c)
+
+The problem with the previous method was that we reduced noise at the cost of losing edges and details of the image. To prevent we use median filter. As observed
+the image displayed above has reduced noise while keeping all the important details.
+
+## Task 6: Sharpening the image with Laplacian, Sobel and Unsharp filters
+
+Using Laplace filter:
+![image](https://github.com/user-attachments/assets/e9f3ec5b-8646-4071-bfe9-13030a0ee62b)
+
+This creates a really dark image and we can barely see the craters on the moon. I have given the alpha as 0.5.
+
+Using Sobel filter:
+![image](https://github.com/user-attachments/assets/b4f29a5c-8c60-4d7b-ade6-0a3cf6d7a739)
+
+The output of the sobel filter is much better in visualizing the craters. This even highlited some features i didnt know existed on the original moon image. The edge detection is much better in the sobel filter.
+
+

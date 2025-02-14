@@ -79,3 +79,27 @@ What we have done above is we computed the CDF an used it as the intensity trans
 
 As we can see the bottom left image is the best image obtained after performing histogram equalization.
 
+## Task 4: Noise Reduction with Low pass filter
+
+![image](https://github.com/user-attachments/assets/5b3103cf-5d66-4d36-8fc9-32b8859fc614)
+In this taks we'll be denoising the above PCB image using matlab's builtin fspecial function.
+
+![image](https://github.com/user-attachments/assets/7831059f-cbd1-4d8e-9ca8-0c9cf14fa172)
+The above is the output for the code that was already provided and as you can the image is much clear with features and less noisy.
+I have played around by changing the values of the kernel and sigma as you can see below:
+
+Case 1: Small kernel size and low sigma
+![image](https://github.com/user-attachments/assets/9df11ca3-438a-44a1-bce2-0536796e9441)
+
+Here the edges are more defined but the image is still a bit noisy.
+
+Case 2: Medium kernel size and medium sigma
+![image](https://github.com/user-attachments/assets/10063b9e-6f18-4ce0-a3d6-b17a8f363462)
+
+Here the noise is reduced further but edges are slightly blurred.
+
+Case 3: Large kernel size with high sigma
+![image](https://github.com/user-attachments/assets/75dd6391-482c-49d7-a7da-6550ea86d6ca)
+
+Here it is smoothed out properly with almost no noise but all the edges and details are blurred out and lost.
+

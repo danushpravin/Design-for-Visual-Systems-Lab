@@ -24,10 +24,19 @@ imshow(f(:,241:482))
 ```
 ![image](https://github.com/user-attachments/assets/ac0f749e-610d-4c60-90e8-226827079e7c)
 
-The function used for contarst enhancement is the imadjust function. I will use this to get the negative format of the original image.
+The function used for contrast enhancement is the imadjust function. I will use this to get the negative format of the original image.
 ![image](https://github.com/user-attachments/assets/cc0a2476-aea8-4293-ac19-90854b3b6f20)
 ```matlab
 g1 = imadjust(f, [0 1], [1 0])
 ```
 This makes it much easier to spot the cancer region as seen clearly from the above image. As i understood, in the above function we are reversing the colours by mapping the low input to the highest ouput and vice versa.
+
+Gamma Correction
+```matlab
+g2 = imadjust(f, [0.5 0.75], [0 1]);
+g3 = imadjust(f, [ ], [ ], 2);
+```
+![image](https://github.com/user-attachments/assets/cc07cc8e-c12a-402e-a1ea-d2cb13904551)
+
+This is another efficient method of spotting the cancerous region. Here as i understood we are reducing the low end even more while simultaneously expanding the high end of the grayscale. Due to this we see more details in the g3 image.
 

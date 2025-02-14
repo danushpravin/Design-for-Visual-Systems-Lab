@@ -40,3 +40,12 @@ g3 = imadjust(f, [ ], [ ], 2);
 
 This is another efficient method of spotting the cancerous region. Here as i understood we are reducing the low end even more while simultaneously expanding the high end of the grayscale. Due to this we see more details in the g3 image.
 
+## Task 2: Contrast Stretching Transformation
+
+Now we get rid of the function and use a transformation function formula to perform the Contrast Enhancement.
+
+![image](https://github.com/user-attachments/assets/c6fc4806-bfa2-461a-9753-e1247975f374)
+
+As observed this image has much better details. This image is more helpful in viewing the complete bone structure. The darker areas are made much lighter and brighter areas are more distinct.
+All the edges are clear and details are really fine and precise.
+

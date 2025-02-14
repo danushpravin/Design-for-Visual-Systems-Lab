@@ -47,3 +47,6 @@ The Gaussian filter helps smooth the image and reduce noise, but it can blur the
 ![image](https://github.com/user-attachments/assets/77e813f3-660d-4a36-9da3-63549c438e66)
 
 I first converted the inverted grayscale image to a binary one using Otsu's method. The blobs turned white, and the background became black. After that, I applied erosion with a 3x3 structuring element to shrink the white areas. Subtracting the eroded image from the original binary image showed the boundaries of the blobs, making the edges of the blobs clearer. The boundary detection highlighted the shapes of the blobs and helped separate them from the background.
+
+I applied opening and closing before the boundary detection. The reason for this is that opening helps remove small noise from the background, while closing fills any small gaps in the blobs. By doing this, I cleaned up the binary image before detecting the boundaries. After applying erosion and subtracting the eroded image from the original, I was able to get cleaner and more accurate boundaries with less noise.
+![image](https://github.com/user-attachments/assets/06f402a1-7fc6-4b44-ac9f-25405aa0df8d)

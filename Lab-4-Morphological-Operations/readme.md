@@ -50,3 +50,31 @@ I first converted the inverted grayscale image to a binary one using Otsu's meth
 
 I applied opening and closing before the boundary detection. The reason for this is that opening helps remove small noise from the background, while closing fills any small gaps in the blobs. By doing this, I cleaned up the binary image before detecting the boundaries. After applying erosion and subtracting the eroded image from the original, I was able to get cleaner and more accurate boundaries with less noise.
 ![image](https://github.com/user-attachments/assets/06f402a1-7fc6-4b44-ac9f-25405aa0df8d)
+
+## Task 4: Function bwmorph - thinning and thickening
+
+![image](https://github.com/user-attachments/assets/f9b0f6b0-36d2-42cf-9260-0f1087e4f0f4)
+After performing the thinning operation, I observed that the result after two thinning operations (g2) is the most ideal. As we apply more thinning (g3, g4, g5), we begin to lose important details of the fingerprint, like the ridges and finer features. This shows that while thinning reduces the thickness of the lines, overdoing it causes loss of critical structural details, making g2 the best balance between thinning and preserving key information.
+![image](https://github.com/user-attachments/assets/0ae8c087-58f5-4d4a-87cc-efe86c32eebb)
+When I applied thinning with n = inf, the output was a completely black image. This happened because the thinning operation continued to remove pixels until nothing was left, leaving no structure in the image.
+![image](https://github.com/user-attachments/assets/a3558144-0a52-464f-b42b-6b9d1ce68e53)
+Black fingerprint on white background using complement.
+What i understood is that Thinning removes pixels from the edges of objects, making them smaller or skeletonized. Thickening adds pixels, making the objects larger.
+
+## Task 5: Connected Components and Labels
+![image](https://github.com/user-attachments/assets/9c95d348-de08-4937-a9df-b44845d3476f)
+![image](https://github.com/user-attachments/assets/caa6aaab-2c7e-43f7-86f9-b36418ed0f79)
+
+The largest connected component turned out to be the "ff" from the word "different." Since the letters were connected, they formed a bigger region than other parts of the image, so it got erased.
+
+## Task 6: Morphological Reconstruction
+![image](https://github.com/user-attachments/assets/5bb04faf-e8ee-4a0a-ab9f-698f767b540d)
+
+The result showed that all the text with vertical elements exactly 17 pixels tall was kept, while shorter or different-shaped characters were removed. The reconstructed image brought back only the tall, thin characters that matched the structuring element.
+![image](https://github.com/user-attachments/assets/2bfb24f4-be6e-429a-a2ba-e42561bf37bb)
+The result of the imfill function shows that all the holes and circular gaps in the text are filled.
+
+## Task 7: Morphological Operation on Grayscale images
+![image](https://github.com/user-attachments/assets/380061f7-b802-400d-898f-265431b2d313)
+
+Dilation expanded the brighter areas, making the light regions more prominent. Erosion shrunk the light areas, darkening the image. Subtracting the eroded image from the dilated one enhanced the boundaries, highlighting the edges clearly.

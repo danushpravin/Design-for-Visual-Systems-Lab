@@ -121,6 +121,30 @@ This creates a really dark image and we can barely see the craters on the moon. 
 Using Sobel filter:
 ![image](https://github.com/user-attachments/assets/b4f29a5c-8c60-4d7b-ade6-0a3cf6d7a739)
 
-The output of the sobel filter is much better in visualizing the craters. This even highlited some features i didnt know existed on the original moon image. The edge detection is much better in the sobel filter.
+The output of the sobel filter is much better in visualizing the craters. This even highlited some features i didnt know existed on the original moon image. The feature detection is much better in the sobel filter.
 
+Using Unsharp filter:
+![image](https://github.com/user-attachments/assets/f5a8dbc0-8788-4b3e-9826-7e3c3c092b16)
 
+The unsharp filter provides a higher definition image of the original image. This image is more useful and will help in getting more accurate filtering.
+
+Final Crater Image:
+![image](https://github.com/user-attachments/assets/6b78a2bb-8bd6-4e8e-a3b7-2cc2bebf0141)
+
+I first applied the unsharp filter to enhance image quality and the used sobel followed by laplace filter. The output of the laplace filter is unsatisfactory and i think the sobel filter's output is good enough for crater detection.
+
+## Task 7
+![image](https://github.com/user-attachments/assets/1c3cfe77-eadb-402a-9b19-382dab823e99)
+
+I used hitrogram equalization function for the above image for contrast enhancement.
+
+![image](https://github.com/user-attachments/assets/4de62905-0a26-4b07-9639-59aa10ce2705)
+
+For the above image, i used unsharp filter to pre process the image and render a better quality with more precise edges and details. Then applied a sobel filter on the output of the previous filter which gave the perfect edge detection of all the circles.
+
+![image](https://github.com/user-attachments/assets/810b0b86-ffd1-469b-bce5-c4523de2545c)
+
+For the above image i applied the following techniques in order to improve lighting and colour.
+1)Unsharp Mask: Improved edges and details of the image.
+2)Histogram Equalization: Enhanced the contrast, making dark areas more visible.
+3)Gamma Correction: Adjusted the brightness to make the image clearer and improve visibility in darker regions.

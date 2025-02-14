@@ -59,3 +59,23 @@ For the histogram method first we import the pollen image and plot the hisotgram
 ![image](https://github.com/user-attachments/assets/3bfa89ab-48d8-4130-a8a0-d660a672de79)
 
 ![image](https://github.com/user-attachments/assets/9c0fc836-82d7-450e-86ae-87f70d381f5a)
+
+Now we try stretching the intensity using the imadjust function.
+
+![image](https://github.com/user-attachments/assets/e3402370-23b4-4f44-95d1-56104a82dceb)
+
+![image](https://github.com/user-attachments/assets/572eac9c-898d-4d51-b225-809102f7f723)
+We can see that by strecthing the intensity we get a much better image but still not the perfect one.
+Now we calculate the probability distributive and cumulative distribution fucntion and plot them to improve the image even more.
+
+![image](https://github.com/user-attachments/assets/8b8cea74-abf8-4b9f-b841-c6f9df1f34de)
+
+After this we perform histogram equalization with the above computed data. 
+
+![image](https://github.com/user-attachments/assets/59535623-b91f-4bbf-9095-64b30f6ef01e)
+
+What we have done above is we computed the CDF an used it as the intensity transformation function in order to flatten the histogram.
+![image](https://github.com/user-attachments/assets/9555951f-9d9d-4ec6-bbb5-31bac782da01)
+
+As we can see the bottom left image is the best image obtained after performing histogram equalization.
+
